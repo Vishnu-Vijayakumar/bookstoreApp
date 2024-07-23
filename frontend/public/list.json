@@ -1,0 +1,100 @@
+[
+    
+    {
+        "id":1,
+        "name":"Story book",
+        "title":"Where every book tells a unique story, and every reader finds their perfect match.",
+        "price":0,
+        "category":"Free",
+        "image":"https://m.media-amazon.com/images/I/91kBIu-HvPL._SL1500_.jpg"
+    },
+
+
+    {
+        "id":2,
+        "name":"Comedy book",
+        "title":"Where every book tells a unique story, and every reader finds their perfect match.",
+        "price":500,
+        "category":"Comedy",
+        "image":"https://m.media-amazon.com/images/I/716ea719d2L._SL1200_.jpg"
+    },
+
+    {
+        "id":3,
+        "name":"Comic book",
+        "title":"Where every book tells a unique story, and every reader finds their perfect match.",
+        "price":50,
+        "category":"Comic",
+        "image":"https://m.media-amazon.com/images/I/71FK64FYm4L._SL1200_.jpg"
+    },
+    {
+        "id":4,
+        "name":"Fiction book",
+        "title":"Where every book tells a unique story, and every reader finds their perfect match.",
+        "price":0,
+        "category":"Fiction",
+        "image":"https://m.media-amazon.com/images/I/91kBIu-HvPL._SL1500_.jpg"
+    },
+    {
+        "id":5,
+        "name":"Story book",
+        "title":"Where every book tells a unique story, and every reader finds their perfect match.",
+        "price":0,
+        "category":"Free",
+        "image":"https://m.media-amazon.com/images/I/91kBIu-HvPL._SL1500_.jpg"
+    },
+    {
+        "id":6,
+        "name":"Story book",
+        "title":"Where every book tells a unique story, and every reader finds their perfect match.",
+        "price":0,
+        "category":"Free",
+        "image":"https://m.media-amazon.com/images/I/91kBIu-HvPL._SL1500_.jpg"
+    },
+    {
+        "id":7,
+        "name":"Story book",
+        "title":"Where every book tells a unique story, and every reader finds their perfect match.",
+        "price":0,
+        "category":"Free",
+        "image":"https://m.media-amazon.com/images/I/91kBIu-HvPL._SL1500_.jpg"
+    },
+    {
+        "id":8,
+        "name":"Story book",
+        "title":"Where every book tells a unique story, and every reader finds their perfect match.",
+        "price":0,
+        "category":"Free",
+        "image":"https://m.media-amazon.com/images/I/91kBIu-HvPL._SL1500_.jpg"
+    },
+    {
+        "id":9,
+        "name":"Story book",
+        "title":"Where every book tells a unique story, and every reader finds their perfect match.",
+        "price":0,
+        "category":"Free",
+        "image":"https://m.media-amazon.com/images/I/91kBIu-HvPL._SL1500_.jpg"
+    },
+
+    {
+        "id":10,
+        "name":"Story book",
+        "title":"Where every book tells a unique story, and every reader finds their perfect match.",
+        "price":0,
+        "category":"Free",
+        "image":"https://m.media-amazon.com/images/I/91kBIu-HvPL._SL1500_.jpg"
+    },
+
+    {
+        "id":11,
+        "name":"Story book",
+        "title":"Where every book tells a unique story, and every reader finds their perfect match.",
+        "price":0,
+        "category":"Free",
+        "image":"https://m.media-amazon.com/images/I/91kBIu-HvPL._SL1500_.jpg"
+    }
+
+
+
+
+]
