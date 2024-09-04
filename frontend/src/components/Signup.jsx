@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Login from './Login';
 import { useForm } from 'react-hook-form';
+import axios from 'axios';
 
 function Signup() {
   const {
@@ -10,8 +11,36 @@ function Signup() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
-
+  const onSubmit = async (data) => {
+    const userInfo = {
+      fullname: data.fullname,
+      email: data.email,
+      password: data.password,
+    };
+  
+    try {
+      const res = await axios.post("http://localhost:4001/user/signup", userInfo);
+      if (res.data) {
+        alert("Signup Successfully");
+      }
+      localStorage.setItem("Users",JSON.stringify(res.data.existingUser));
+    } catch (err) {
+      if (err.response) {
+        // Server responded with a status other than 2xx
+        console.error("Response Error:", err.response.data);
+        alert("Signup Error: " + err.response.data.message);
+      } else if (err.request) {
+        // No response was received from the server
+        console.error("Request Error:", err.request);
+        alert("Signup Error: No response from server");
+      } else {
+        // Other errors
+        console.error("Error:", err.message);
+        alert("Signup Error: " + err.message);
+      }
+    }
+  };
+  
   return (
     <div className="flex h-screen items-center justify-center">
       <div className="w-[600px]">
@@ -26,10 +55,10 @@ function Signup() {
                 type="text"
                 placeholder="Enter your full name"
                 className="w-80 px-3 py-1 border rounded-md outline-none"
-                {...register("name", { required: true })}
+                {...register("fullname", { required: true })}
               />
               <br></br>
-              {errors.name && <span className="text-sm text-red-500">This field is required</span>}
+              {errors.fullname && <span className="text-sm text-red-500">This field is required</span>}
             </div>
             <div className="mt-4 space-y-2">
               <span>Email</span>

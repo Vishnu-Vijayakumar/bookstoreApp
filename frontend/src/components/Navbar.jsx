@@ -1,8 +1,12 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import Login from './Login';
+import { useAuth } from '../context/AuthProvider';
+
 
 function navbar() {
+  
+  
  const [theme,setTheme]=useState(localStorage.getItem("theme")?localStorage.getItem("theme") :"light")
  const element=document.documentElement;
  useEffect(()=>{
@@ -79,7 +83,7 @@ function navbar() {
             {navItems}
       </ul>
     </div>
-    <a className=" text 2xl font-bold ">bookstore</a>
+    <a className=" text 2xl font-bold ">MyBooks</a>
   </div>
   <div className = "navbar-end space-x-3">
   <div className="navbar-center hidden lg:flex">
